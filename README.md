@@ -26,5 +26,3 @@ will be pressed again.
 6. load and show dictionary will be applied according to the value of "use stemmer".
 
 good luck!
-
-yarden and yafit
