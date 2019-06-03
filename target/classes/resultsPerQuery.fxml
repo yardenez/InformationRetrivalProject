@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="306.0" prefWidth="355.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ResultsPerQueryView">
+    <children>
+        <TableView fx:id="tableQueryResults" layoutX="6.0" layoutY="6.0" prefHeight="248.0" prefWidth="343.0">
+            <columns>
+                <TableColumn fx:id="docIdCol" prefWidth="114.66668939590454" text="Doc ID" />
+                <TableColumn fx:id="docRankCol" prefWidth="90.66667938232422" text="Doc Rank" />
+                <TableColumn fx:id="showEntitiesCol" prefWidth="132.6667022705078" text="Document Entities" />
+            </columns>
+        </TableView>
+      <Button fx:id="btn_back" layoutX="144.0" layoutY="267.0" mnemonicParsing="false" onAction="#handleBackPressed" text="Back" />
+    </children>
+
+</AnchorPane>

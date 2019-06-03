@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="342.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.SearchedQueriesView">
+    <children>
+        <TableView fx:id="tableSearchQueries" layoutX="6.0" layoutY="6.0" prefHeight="248.0" prefWidth="572.0">
+            <columns>
+                <TableColumn fx:id="queryIDCol" prefWidth="85.99999761581421" text="Query ID" />
+                <TableColumn fx:id="queryTextCol" prefWidth="279.99999237060547" text="Query" />
+                <TableColumn fx:id="showResultsOfQuery" prefWidth="196.66668701171875" text="Query Results" />
+            </columns>
+        </TableView>
+      <Button fx:id="btn_browse" layoutX="418.0" layoutY="265.0" mnemonicParsing="false" text="Browse" onAction="#handleBrowseSelection" />
+      <TextField fx:id="txt_resultsPath" layoutX="126.0" layoutY="265.0" prefHeight="0.0" prefWidth="284.0" promptText="Please enter your requested path" />
+      <Button fx:id="btn_saveResults" layoutX="249.0" layoutY="302.0" mnemonicParsing="false" text="save results" onAction="#handleSaveResultsRequest" />
+    </children>
+
+</AnchorPane>
